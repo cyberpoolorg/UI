@@ -97,5 +97,5 @@ directories:
 
 publish:
   provider: github
-  owner: Qortal
+  owner: cyberpoolorg
   repo: UI
