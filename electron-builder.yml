@@ -1,6 +1,6 @@
 appId: org.qortal.QortalUi
 productName: "Qortal UI"
-copyright: "Copyright © 2020"
+copyright: "Copyright © 2021"
 
 # forceCodeSigning: false
 
@@ -98,4 +98,4 @@ directories:
 publish:
   provider: github
   owner: Qortal
-  repo: qortal-ui
+  repo: UI
