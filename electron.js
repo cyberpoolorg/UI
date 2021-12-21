@@ -1,11 +1,11 @@
 const { app, BrowserWindow, ipcMain, Menu, Notification, Tray, nativeImage } = require('electron');
 const { autoUpdater } = require('electron-updater');
+const server = require('./server.js');
 const path = require('path');
 
 // THOUGHTS: Make this APP more modularize and platform agnostic...
 
 process.env['APP_PATH'] = app.getAppPath();
-const server = require('./server.js');
 
 const editMenu = Menu.buildFromTemplate([
 	{
