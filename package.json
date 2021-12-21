@@ -11,7 +11,7 @@
   "main": "electron.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Qortal/UI.git"
+    "url": "https://github.com/cyberpoolorg/UI.git"
   },
   "author": "QORTAL <admin@qortal.org>",
   "license": "GPL-3.0",
@@ -23,7 +23,7 @@
     "watch": "node watch.js",
     "watch-inline": "node watch-inline.js",
     "start-electron": "NODE_ENV=production electron .",
-    "build-electron": "electron-builder build  --publish never",
+    "build-electron": "electron-builder build --publish never",
     "deploy-electron": "electron-builder build --win --publish always",
     "release": "NODE_ENV=production electron-builder build --publish never",
     "update-package-json": "node update-package-json.js"
