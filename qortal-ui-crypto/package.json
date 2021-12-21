@@ -10,7 +10,7 @@
   "main": "api.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Qortal/UI.git",
+    "url": "https://github.com/cyberpoolorg/UI.git",
     "directory": "qortal-ui-crypto"
   },
   "author": "QORTAL <admin@qortal.org>",
