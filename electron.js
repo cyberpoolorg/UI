@@ -119,7 +119,7 @@ if (!isLock) {
 			createTray()
 		}
 	})
-	ipcMain.on('app_version', (event, args) => {
+	ipcMain.on('app_version', (event) => {
 		myWindow.webContents.send("app_version", { version: app.getVersion() });
 	})
 	autoUpdater.on('update-available', () => {
