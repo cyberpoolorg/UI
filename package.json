@@ -29,8 +29,7 @@
     "update-package-json": "node update-package-json.js"
   },
   "dependencies": {
-    "electron-updater": "4.3.5",
-    "electron-log": "4.4.1"
+    "electron-updater": "4.3.5"
   },
   "devDependencies": {
     "electron": "11.5.0",
