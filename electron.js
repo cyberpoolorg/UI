@@ -1,7 +1,6 @@
 const { app, BrowserWindow, ipcMain, Menu, Notification, Tray, nativeImage } = require('electron');
 const { autoUpdater } = require('electron-updater');
 const log = require('electron-log');
-const server = require('./server.js');
 const path = require('path');
 
 // THOUGHTS: Make this APP more modularize and platform agnostic...
@@ -119,7 +118,7 @@ if (!isLock) {
 			createTray()
 		}
 	})
-	ipcMain.on('app_version', (event) => {
+	ipcMain.on('app_version', (event, args) => {
 		myWindow.webContents.send("app_version", { version: app.getVersion() });
 	})
 	autoUpdater.on('update-available', () => {
