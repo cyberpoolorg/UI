@@ -122,14 +122,14 @@ if (!isLock) {
 			title: 'Update Available!',
 			body: 'It will be downloaded in the background and installed on next restart'
 		})
-        	n.show()
+        n.show()
 	})
 	autoUpdater.on('error', (err) => {
 		const n = new Notification({
 			title: 'Error while Updating...',
 			body: err
 		})
-		//n.show()
+		n.show()
 	})
 	autoUpdater.on('update-downloaded', () => {
 		const n = new Notification({
