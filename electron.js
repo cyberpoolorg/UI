@@ -2,6 +2,7 @@ const { app, BrowserWindow, ipcMain, Menu, Notification, Tray, nativeImage } = r
 const { autoUpdater } = require('electron-updater');
 const log = require('electron-log');
 const path = require('path');
+const server = require('./server.js');
 
 // THOUGHTS: Make this APP more modularize and platform agnostic...
 
