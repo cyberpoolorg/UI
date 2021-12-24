@@ -1,5 +1,6 @@
 const { app, BrowserWindow, ipcMain, Menu, Notification, Tray, nativeImage } = require('electron');
 const { autoUpdater } = require('electron-updater');
+const log = require('electron-log');
 const path = require('path');
 
 // THOUGHTS: Make this APP more modularize and platform agnostic...
@@ -114,8 +115,9 @@ if (!isLock) {
 		}
 	})
 	ipcMain.on('app_version', (event) => {
-		  event.webContents.send('app_version', { version: app.getVersion() });
-	})
+        log.info(app.getVersion());
+		mainWindow.webContents.send('app_version', { version: app.getVersion() });
+	});
 	autoUpdater.on('update-available', () => {
 		const n = new Notification({
 			title: 'Update Available!',
