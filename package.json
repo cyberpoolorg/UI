@@ -26,14 +26,16 @@
   "scripts": {
     "dev": "node server.js",
     "build-dev": "node build.js",
+    "build": "NODE_ENV=production node build.js",
     "server": "NODE_ENV=production node server.js",
     "watch": "node watch.js",
     "watch-inline": "node watch-inline.js",
-    "start": "NODE_ENV=production electron .",
-    "build": "electron-builder build --publish never",
-    "deploy": "electron-builder build --win --publish never",
+    "start-electron": "NODE_ENV=production electron .",
+    "build-electron": "electron-builder build  --publish never",
+    "deploy-electron": "electron-builder build --win --publish never",
     "release": "NODE_ENV=production electron-builder build --publish never",
-    "update-package-json": "node update-package-json.js"
+    "update-package-json": "node update-package-json.js",
+    "publish": "electron-builder -p always"
   },
   "dependencies": {
     "electron-updater": "4.3.9",
