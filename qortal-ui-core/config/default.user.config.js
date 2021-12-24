@@ -13,15 +13,15 @@ const user = {
 		},
 		{
 			protocol: 'http',
-			domain: 'node1.qortal.org',
+			domain: '62.171.156.199',
 			port: 12391,
-			enableManagement: false,
+			enableManagement: true,
 		},
 		{
 			protocol: 'http',
-			domain: 'node2.qortal.org',
+			domain: 'node1.qortal.org',
 			port: 12391,
-			enableManagement: false,
+			enableManagement: true,
 		},
 		// Testnet nodes
 		{
@@ -32,16 +32,16 @@ const user = {
 		},
 		{
 			protocol: 'http',
-			domain: 'node1.qortal.org',
+			domain: '62.171.156.199',
 			port: 62391,
 			enableManagement: false,
 		},
 		{
 			protocol: 'http',
-			domain: 'node2.qortal.org',
+			domain: 'node1.qortal.org',
 			port: 62391,
 			enableManagement: false,
-		},
+		}
 		
 	],
 	nodeSettings: {
