@@ -33,6 +33,9 @@ const editMenu = Menu.buildFromTemplate([
 
 Menu.setApplicationMenu(editMenu)
 
+autoUpdater.logger = log;
+log.info('App starting...');
+
 let myWindow = null;
 
 // TODO: Move the Tray function into another file (maybe Tray.js) -_-
