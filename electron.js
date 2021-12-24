@@ -1,5 +1,6 @@
 const { app, BrowserWindow, ipcMain, Menu, Notification, Tray, nativeImage } = require('electron');
 const { autoUpdater } = require('electron-updater');
+const server = require('./server.js');
 const log = require('electron-log');
 const path = require('path');
 
