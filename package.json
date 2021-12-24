@@ -15,7 +15,7 @@
        "owner": "cyberpoolorg",
        "repo": "UI"
    }]
- }
+ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cyberpoolorg/UI.git"
